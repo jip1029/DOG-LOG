@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap"
+      rel="stylesheet"
+    />
+    <title>Solo Project</title>
+  </head>
+  <body id="body-container" onload="fetchDogs()">
+    <header id="head-container">
+      <button id="restart" onclick="restartGame()">Restart</button>
+      <h1>PICK YOUR FAV</h1>
+      <button id="dogLog" onclick="location.href='./dog-log';">Dog Log</button>
+    </header>
+    <div id="winner-container">
+      <h2 id="winner-text">Damn dat dog nice!</h2>
+      <img id="winningImg" src="" />
+    </div>
+    <div id="main-container">
+      <div id="left-container">
+        <button id="leftDog" onclick="leftButtonClick()">Next Pup</button>
+        <img id="leftImg" class="clickImg" onclick="leftButtonClick()" src="" />
+      </div>
+      <div id="right-container">
+        <button id="rightDog" onclick="rightButtonClick()">Next Pup</button>
+        <img
+          id="rightImg"
+          class="clickImg"
+          onclick="rightButtonClick()"
+          src=""
+        />
+      </div>
+    </div>
+    <div id="clickNum-container">
+      <h2 id="clickNum">Clicks Left: 3</h2>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
